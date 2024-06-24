@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-variant-caps: all-small-caps;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(315deg, #FFDEE9 0%, #B5FFFC 46%);
+}
+
+#root {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    padding: 1rem 2rem;
+    margin: auto;
+    border: none;
+    background: #ffffffb2;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin: 0 auto;
+    text-align: center;
+    margin: 1rem;
+
+}
+
+.red {
+    color: #fff;
+    font-weight: 500;
+}
+
+.searchBar input,
+.searchbtn {
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.searchBar input {
+    width: 80%;
+}
+
+.searchbtn {
+    width: 20%;
+    border-left: none;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.searchbtn:hover {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+
+.bottom-text, .red {
+    font-style: 1.2rem;
+}
+
+.weatherDetails {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.left-block,
+.right-block {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-block {
+    padding-left: 0;
+}
+
+.right-block {
+    padding-right: 0;
+}
+
+.name,
+.temp {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.name {
+    font-variant-caps: small-caps;
+
+}
+
+.sun_img {
+    width: 50px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 85%;
+        height: 400px;
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .weatherDetails {
+        height: 250px;
+        margin-top: 2rem;
+    }
+
+    .searchBar input,
+    .searchbtn {
+        padding: 5px 5px;
+    }
+
+    .left-block,
+    .right-block {
+        padding: 0;
+    }
+
+    .name,
+    .temp {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .sun_img {
+        width: 40px;
+    }
+}
